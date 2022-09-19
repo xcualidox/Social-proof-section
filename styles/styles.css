@@ -12,6 +12,11 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
 body{
     
     font-family: 'League Spartan', sans-serif;
@@ -19,10 +24,13 @@ body{
     background: url("../images/bg-pattern-top-desktop.svg") top left ,
     url("../images/bg-pattern-bottom-desktop.svg") bottom right;
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
+    
+
+    
 }
 .container{
+    
+    
     max-width: 1440px;
     height: 100%;
     margin: auto;
@@ -119,6 +127,12 @@ body{
 .reviews > *:last-child{
     align-self: flex-end;
    
+}
+/* attribution */
+.attribution{
+    width: 100%;
+    grid-column: 1/-1;
+    text-align: center;
 }
 /* General attributes */
 .description h1, .rating h3{
