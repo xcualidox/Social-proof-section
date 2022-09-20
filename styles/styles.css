@@ -15,10 +15,10 @@
 html,body{
     width: 100%;
     height: 100%;
-    overflow: auto;
+    
 }
 body{
-    
+    overflow: auto;
     font-family: 'League Spartan', sans-serif;
     font-size: 15px;
     background: url("../images/bg-pattern-top-desktop.svg") top left ,
@@ -29,8 +29,6 @@ body{
     
 }
 .container{
-    
-    
     max-width: 1440px;
     height: 100%;
     margin: auto;
@@ -131,8 +129,10 @@ body{
 /* attribution */
 .attribution{
     width: 100%;
-    grid-column: 1/-1;
+   position: absolute;
     text-align: center;
+    top: 0;
+    left: 0;
 }
 /* General attributes */
 .description h1, .rating h3{
@@ -169,6 +169,11 @@ p{
 
 }
 @media(max-width:478px){
+    body{
+        background: url("../images/bg-pattern-top-mobile.svg") top left ,
+        url("../images/bg-pattern-bottom-mobile.svg") bottom right;
+        background-repeat: no-repeat;
+    }
     .container{
         grid-template-columns: 1fr;
         justify-content: center;
